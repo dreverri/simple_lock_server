@@ -39,8 +39,8 @@ module SimpleLockServer
   class Application < Sinatra::Base
     configure do
       set :locks, Locks.new(ENV['LOCK_PATH'] || 'locks')
-      set :username, ENV['USERNAME']
-      set :password, ENV['PASSWORD']
+      set :username, ENV['LOCK_USER']
+      set :password, ENV['LOCK_PASS']
     end
 
     helpers do
