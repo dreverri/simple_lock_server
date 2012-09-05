@@ -1,0 +1,5 @@
+.bundle
+Gemfile.lock
+locks
+vendor
+spec/test_locks
